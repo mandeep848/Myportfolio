@@ -1,0 +1,82 @@
+body{
+    background-color:antiquewhite;
+   margin: 0px;
+   text-align:left ;
+   display: block;
+   font-family: 'Merriweather', serif;
+}
+/*STARTING OF THE UPPER CONTAINER CSS*/
+ .gradient-background
+{
+    background: linear-gradient(300deg, #000, green, orange);
+    background-size:200% 200%;
+    animation: gradient-animation 10s ease infinite;
+    height: 450px;
+   position: relative;
+   padding-top: 0.5px;
+   padding-right: 66.5px;
+   max-width: 100%;overflow-x: hidden;
+    /* used for putting background on top*/
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+h1{
+    display: block;
+    position: relative; /* or absolute, depending on your layout needs */
+  top: 70px;          /* Adjust top position */
+  left: 70px;
+    font-size: 75px;
+    color: white;
+}
+h2{
+    display: inline-block;
+    position: relative;
+   
+    left: 70px;
+    font-size: 50px;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 3px;
+    color:lightskyblue;
+}
+.image
+{
+    float:right;
+  position: absolute;
+  top: 150px;
+  left:900px;
+}
+img{
+    border: 10px solid white;
+    border-radius: 50% 20% / 10% 40%;
+  }
+  /*ENDING OF THE UPPER CONTAINER CSS*/
+  .skills
+  {
+    position: relative;
+    top: 90px;
+    left: 150px;
+    display: grid;
+    grid-template-columns: 200px 800px;
+    grid-template-rows: 100px;
+  }
+  .skill-text
+  {
+    background-color: black;
+    background-size: 0px 50px;
+    border-radius: 20px;
+  }
+  .skill-text>h2{
+    color: orange;
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+  }
+  
